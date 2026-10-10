@@ -7,7 +7,8 @@
 | trusted Node 意外退出 | 同时间的真实 stderr 与启动目录 | 后续一次为 EPERM chdir | 通用退出消息证明仍是目录不存在 |
 | Browser is not available: iab | Work 父进程变量、服务准备与路由捕获 | 三个 BROWSER_USE_ACCESS_* 未继承 | 可以借别的任务管道 |
 | 页面已建，绑定超时 | DOM-ready、网站检查耗时、默认 deadline | 本机 site-status 两次直连各约 21.4 秒 | 看见页面就代表工具已返回 |
-| 屏幕/鼠标禁用 | CUA_REPL_ENABLED_SURFACES | 本机仅 browser | 属于 MXC 故障 |
+| cua_repl 屏幕/鼠标禁用 | CUA_REPL_ENABLED_SURFACES、独立 Windows 工具注册 | 该 cua_repl 仅 browser；独立工具另查 | 整台机器或所有任务都不支持桌面 |
+| Computer Use skill 可见、独立 node_repl 缺失 | 插件启用、既有 stdio 配置、插件根 MCP 声明、发现响应 | 本机插件根缺 MCP 声明；补齐后 V1 与 tools/list 通过 | 原任务云端工具筛选或桌面操作已通过 |
 
 ## 只读收集
 
@@ -18,6 +19,8 @@
 北京时间减 8 小时为 UTC。对齐初始化、页面创建、DOM-ready、报错和 turn-ended；日志文件修改时间可能滞后。其他任务的路由探测失败不等于本任务失败。
 
 ## 四个机制
+
+四层浏览器环境机制之外，独立 node_repl 缺失按 [注册链修复](node-registration.md) 在本次工作中追加处理。先确认本机已有启用的定义和缺失声明，不修改权限，不将配置缺失一概视为加载故障。
 
 ### platform
 

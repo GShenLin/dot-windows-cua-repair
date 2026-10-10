@@ -35,5 +35,42 @@
     "statement": "第四层dot那边已经确认修复成功了",
     "detailed_step_log_provided": false
   },
-  "reuse_workflow": "One combined repair and local verification; no Dot confirmation required."
+  "reuse_workflow": "One maintenance session for applicable environment repairs and conditional node_repl registration, with local checks and no Dot confirmation required.",
+  "node_registration": {
+    "offline_tests_passed": 11,
+    "scope": [
+      "exact existing definition",
+      "preview and rollback",
+      "owned refresh and reverse rollback",
+      "foreign file and drift refusal",
+      "disabled or unsupported configuration refusal",
+      "no persisted task identity",
+      "discovery error classification and process cleanup"
+    ],
+    "original_local_verification_beijing": "2026-10-10T17:05:20+08:00",
+    "packaged_probe_verified_utc": "2026-10-10T09:14:58.314582+00:00",
+    "packaged_probe_scope": "Read-only checks against existing manual deployment; no runtime redeployment or tools/call",
+    "definition_matches_existing_config": true,
+    "source_files_unchanged": true,
+    "v1": {
+      "mcp_definition_present": true,
+      "skills": 1,
+      "warning_count": 0,
+      "has_error": false
+    },
+    "v2": {
+      "status": "unsupported",
+      "error_code": -32601
+    },
+    "tools": [
+      "js",
+      "js_add_node_module_dir",
+      "js_reset",
+      "turn_ended"
+    ],
+    "diagnostic_processes_closed": true,
+    "task_catalog_verified": false,
+    "desktop_actions_tested": false,
+    "runtime_deployed_during_packaging": false
+  }
 }

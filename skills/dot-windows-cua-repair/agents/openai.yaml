@@ -1,4 +1,4 @@
 interface:
   display_name: "dot-windows-cua-repair"
-  short_description: "定位并修复 Windows 上 Codex 和 Dot 的沙盒启动、浏览器连接与超时问题"
-  default_prompt: "使用 $dot-windows-cua-repair 按已验证方案一次完成 Windows CUA 四层修复及本机检查，无需 Dot 配合确认。"
+  short_description: "修复 Windows CUA 启动、浏览器连接、超时和条件性 node_repl 注册缺口"
+  default_prompt: "使用 $dot-windows-cua-repair 一次完成适用的 Windows CUA 环境修复、条件性 node_repl 注册修复与本机检查，无需 Dot 配合确认；不修改权限，如实报告验证范围。"

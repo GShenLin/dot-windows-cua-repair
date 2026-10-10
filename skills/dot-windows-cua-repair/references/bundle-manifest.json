@@ -3,11 +3,11 @@
   "files": [
     {
       "path": "agents/openai.yaml",
-      "sha256": "eac3443258cfd38ae5990aacf006e385723763ef23d35bf2be26593117fbd393"
+      "sha256": "b24d6c96a08e22cf889298c514f9e0b23df5ab8212d1e979a8a06384e4424cc9"
     },
     {
       "path": "references/acceptance.md",
-      "sha256": "bbd699bff534440e9ac655345cc3d1aaf03302562aabce3436a3bd96c13f9ae6"
+      "sha256": "e39a7efb84ee0a8cd051663efce8a956e71ab4c982d0dd75b3f15c3141c08a88"
     },
     {
       "path": "references/baselines.json",
@@ -15,7 +15,11 @@
     },
     {
       "path": "references/diagnosis.md",
-      "sha256": "60cff3d31572323f15328f93d8bae8c09fd219b5171d67753e7b8cb30e587d6a"
+      "sha256": "8ec50177363db8979908e96572929119c388230a511d7e89a568dcec52b9a245"
+    },
+    {
+      "path": "references/node-registration.md",
+      "sha256": "e0e49a431d64a2ede1c9aadcf75712f49a22fb3f75030e47261d5d2a1965dd35"
     },
     {
       "path": "references/provenance.json",
@@ -23,15 +27,15 @@
     },
     {
       "path": "references/scripts.md",
-      "sha256": "102154f0d2b0bf55dab4d8488c67d99cfabded316744bb39fcfb8fd415e99d5d"
+      "sha256": "e55ef1fe83e7cd13f5e3a65c42d6a3b4fa362d8f72ba77a21703d7c348023aa6"
     },
     {
       "path": "references/session-2026-10-10.md",
-      "sha256": "fcf976ee00baebbd9e020106ff1e2ecf94392181b00efc38df962cd182c00678"
+      "sha256": "81c106ffb1c4667276ed7641779918db484310a99902dee7cf92aed29966739f"
     },
     {
       "path": "references/validation.json",
-      "sha256": "c713511c5ddd0b3befe8acccc830cf6171c36ebd73a0450c331943743d6c64a0"
+      "sha256": "78d83363685410b4306d0447657600eedbccd9aef0bf7aa73fad774b553a6252"
     },
     {
       "path": "scripts/check_bundle.py",
@@ -40,6 +44,14 @@
     {
       "path": "scripts/diagnose.py",
       "sha256": "e17f128e563c13f344cdf17322a50df2fe1597887bc18312a215d5ef13385b76"
+    },
+    {
+      "path": "scripts/node_registration.py",
+      "sha256": "292e20447d24d0c3377afc00cfac92f0c68ef14044de9d1df3e68d6c1554eee0"
+    },
+    {
+      "path": "scripts/node_registration_probe.py",
+      "sha256": "20f0ce23ae6d1119c7a7ca18f8b66e33db30e3a6f52ee1e5a958c935dd8f3e69"
     },
     {
       "path": "scripts/repair.py",
@@ -70,6 +82,10 @@
       "sha256": "545b94a173fd79dab57dc9eb7f9b989c1073c4ec4c4820d27559feb6e3168ea1"
     },
     {
+      "path": "scripts/test_node_registration.py",
+      "sha256": "360bd7b34ef64cfeee6c91b8434c9b1a7f8267edf1826eb976827e25cc089898"
+    },
+    {
       "path": "scripts/test_repair.py",
       "sha256": "334fa315fbb453e16e5083fc90a2cdca4bb91ad2c14405157188bb173d3bd7a5"
     },
@@ -83,7 +99,7 @@
     },
     {
       "path": "SKILL.md",
-      "sha256": "a42e741e4d44bdc8a84421bd20ac4c03fff5d53b89fce41c5d77055de734bfb7"
+      "sha256": "00a558a2483d6dccc723b30669e34e6f2c7c48601f5aa3297696c47680eb1464"
     }
   ]
 }

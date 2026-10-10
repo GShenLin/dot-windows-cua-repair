@@ -4,6 +4,8 @@
 
 目标是 Windows 当前用户的 Codex CUA 运行时。诊断/父进程读取/启动测试需要 Python 3 与 psutil；脚本不会安装依赖。JS 语法检查使用当前 MCP 配置的 Node。运行时桥是独立 Node 脚本。不要用管理员权限改变目录 ACL 来使检查通过。
 
+新增独立 node_repl 注册脚本需要 Python 3.11+（标准库 TOML 解析）。[注册链操作说明](node-registration.md) 给出 `node_registration.py`、`node_registration_probe.py` 的同轮预览、安装、刷新、验证和回滚命令。它复用现有启用定义，不修改权限，也不属于 `repair.py --fixes all` 的运行时文件补丁。
+
 AgentPark 通过 SKILL.md 发现此包；这些是按需执行的维护脚本，没有注册自动运行的 skill.json 工具。此包不发 HTTP 请求，不新增 AgentPark 网络客户端。若以后把网络诊断做成项目代码，遵守根目录 AGENTS.md 的 CurlHttpTransport 边界。
 
 脚本分为只读诊断/验证与显式写入两类。公开版离线测试使用自行构造的最小样例，不分发厂商运行时代码。`scripts/runtime/*` 是安装器复制的实现，不直接从 Skill 目录启动；它们依赖安装器生成的 repair-context.json 与实际 @oai 包环境。
@@ -65,6 +67,7 @@ python "$skillDir\scripts\repair.py" --mcp-config "$mcpConfig" --fixes all --bac
 ```powershell
 python "$skillDir\scripts\check_bundle.py" --node "$nodeExe"
 python "$skillDir\scripts\test_repair.py"
+python -X utf8 -B "$skillDir\scripts\test_node_registration.py"
 ```
 
 `$nodeExe` 取有效 MCP command。启动验证会运行一个**本脚本拥有**的临时 MCP 进程，用原配置、精简环境及受限 MXC 元数据启动，不操作浏览器：
@@ -96,5 +99,7 @@ python "$skillDir\scripts\rollback.py" "$backupDir\manifest.json" --apply
 首先核对全部备份和目标文件。若某文件已被更新或用户修改，整个预检失败，不覆盖它。已恢复的文件可重复检查；中断安装可恢复。恢复原文件，只删除本清单创建且哈希仍匹配的单个 helper，不递归删除。保留备份与证据。回滚入口的激活同样需要新工具进程。
 
 ## 本包验证范围
+
+新增注册测试使用合成配置，覆盖精确复制、回滚、刷新逆序恢复、未知文件拒绝、配置漂移、禁用/不支持配置拒绝、不持久化任务身份，以及发现探测的失败分类和进程收尾。测试不调用桌面工具；本机原始修复的发现结果与本包离线结果分开记录。
 
 离线测试覆盖完整文件事务、重复恢复、目标漂移拒绝、备份损坏拒绝、修复层选择、父进程身份与端点检查、允许变量筛选。原始版本指纹和包文件有哈希清单，离线事务测试使用独立合成样例；Python/JS 做语法检查。历史部署的四层方案已获用户转述 Dot 成功确认；参数化入口属于整理版，其本机验证范围单独记录，不假称已经重新部署。正常执行不需要 Dot 再验收。
