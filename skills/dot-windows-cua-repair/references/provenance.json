@@ -1,0 +1,63 @@
+{
+  "record_date": "2026-10-10",
+  "sources": [
+    {
+      "sha256": "992174a5e637645aeb444adfdb1bae688e997bb84d7db07532f68e358e60f278",
+      "source_name": "cua-repl.mjs.original"
+    },
+    {
+      "sha256": "3e52a41f4da41d35be8cc3723fe97251711087a998c1ed7f2cfdf7e20b50fc2b",
+      "source_name": "launch.js.before-diagnostics"
+    },
+    {
+      "sha256": "ccb54dd064db5851f5fe940404b5abf69afb3f826d9b9dccd8be6824493e697f",
+      "source_name": "cua-repl.mjs.patched"
+    },
+    {
+      "sha256": "cd3bc408734e7e1ebf3e09bf207acc5f3d838443f0a51c515764bdd8cc8439a0",
+      "source_name": "read-parent-browser-env.py"
+    },
+    {
+      "sha256": "5fc5a300578abfc103f9dd53c1a8b452f1af111c6fa968fb9f940156f2f86348",
+      "source_name": "windows-cwd-bridge.mjs"
+    },
+    {
+      "sha256": "0814efe3d921403808c59d353707ace6d845902d2683df6dd66d4edfa3e9cda3",
+      "source_name": "verify_launch.py"
+    },
+    {
+      "sha256": "c8803ca32eacb5bce78f83501597e7dc54fe8284c20b5088be6322fd2756d3c7",
+      "source_name": "change-record.json"
+    },
+    {
+      "sha256": "cfadf316e7fe00cae2e25a78637c2290fd11ad80f84e3faa685a8b643096bad6",
+      "source_name": "proxy-parent-verification.json"
+    },
+    {
+      "sha256": "4d419db7c2a542d3dedf9650a30d607782a3aa8d2cdb573d67fafb64cd3bc42e",
+      "source_name": "proxy-startup-verification.json"
+    },
+    {
+      "sha256": "df64a83b942b980ac89434725c78412e66183df809bf378216fb10709d05742b",
+      "source_name": "proxy-timeout-findings.md"
+    },
+    {
+      "sha256": "a82f3c2999ae47f23882d45a109d030f559ec32a6729cf16e160de3e01262e5f",
+      "source_name": "temporary-browser-timing.json"
+    }
+  ],
+  "packaging_changes": [
+    "Parameterized launcher paths in repair-context.json; select repair layers explicitly.",
+    "Parent reader accepts configured verified Codex path and forwards only selected context.",
+    "KnownFolder LocalAppData resolved during planning, not hard-coded to a user profile.",
+    "Cwd bridge derived from executed source; additionally refuses relocation after a JS call without MXC metadata.",
+    "Added fingerprint-gated planning, backed-up installation and guarded rollback.",
+    "Added safe diagnostics, optional timing instrumentation and offline tests.",
+    "Public edition removes absolute machine paths and vendor-source fixtures; offline tests use independent synthetic fixtures."
+  ],
+  "live_deployment": "No runtime deployment during skill packaging. Existing manual repair is left unchanged.",
+  "historical_acceptance": "All four deployed repair layers confirmed successful; fourth proxy layer confirmed by user relaying Dot success on 2026-10-10. No detailed per-step log or precise acceptance time supplied.",
+  "excluded": "Full environment, credentials, browser identity values, complete logs and extracted app bundle are not bundled.",
+  "reuse_workflow": "Assume the same supported failure scenario; apply all four repairs together and verify locally. No Dot confirmation or relay required.",
+  "source_collection": "Private repair archive; original files are not redistributed."
+}

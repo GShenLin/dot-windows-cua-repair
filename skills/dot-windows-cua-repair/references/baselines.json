@@ -1,0 +1,12 @@
+{
+  "cua_build": "26.1007.21434",
+  "desktop_package": "26.1007.2314.0",
+  "launcher_sha256": "992174a5e637645aeb444adfdb1bae688e997bb84d7db07532f68e358e60f278",
+  "launch_module_sha256": "3e52a41f4da41d35be8cc3723fe97251711087a998c1ed7f2cfdf7e20b50fc2b",
+  "browser_service_sha256": "8c83e93bdca10cdffa9f7af80db7775ddf1d993186dbf4b8b3d32d11e9bd9666",
+  "historical_launcher_sha256": [
+    "1f442e54798987a21a908bcb66391877e4d99d6779bd4d8647d5cd51ca108bb7",
+    "161054f04692440319012e9b1c7b6838c52faafb23a72641fcbc8a611ccf0f22",
+    "ccb54dd064db5851f5fe940404b5abf69afb3f826d9b9dccd8be6824493e697f"
+  ]
+}

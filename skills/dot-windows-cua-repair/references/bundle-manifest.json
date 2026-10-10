@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "eac3443258cfd38ae5990aacf006e385723763ef23d35bf2be26593117fbd393"
+    },
+    {
+      "path": "references/acceptance.md",
+      "sha256": "bbd699bff534440e9ac655345cc3d1aaf03302562aabce3436a3bd96c13f9ae6"
+    },
+    {
+      "path": "references/baselines.json",
+      "sha256": "4d050e6d90105995b0d5f36d4161322dac5765ba12601528ac9019dc67200d54"
+    },
+    {
+      "path": "references/diagnosis.md",
+      "sha256": "60cff3d31572323f15328f93d8bae8c09fd219b5171d67753e7b8cb30e587d6a"
+    },
+    {
+      "path": "references/provenance.json",
+      "sha256": "d2922ec59184be8091db0139a4e9d050d1a054ae9d35bfad0ad66fca24be36fd"
+    },
+    {
+      "path": "references/scripts.md",
+      "sha256": "102154f0d2b0bf55dab4d8488c67d99cfabded316744bb39fcfb8fd415e99d5d"
+    },
+    {
+      "path": "references/session-2026-10-10.md",
+      "sha256": "fcf976ee00baebbd9e020106ff1e2ecf94392181b00efc38df962cd182c00678"
+    },
+    {
+      "path": "references/validation.json",
+      "sha256": "c713511c5ddd0b3befe8acccc830cf6171c36ebd73a0450c331943743d6c64a0"
+    },
+    {
+      "path": "scripts/check_bundle.py",
+      "sha256": "62ed2ac1f06bb055c9b7956f6c9281e622380a2116ce9362b13c9d98b8a9ae24"
+    },
+    {
+      "path": "scripts/diagnose.py",
+      "sha256": "e17f128e563c13f344cdf17322a50df2fe1597887bc18312a215d5ef13385b76"
+    },
+    {
+      "path": "scripts/repair.py",
+      "sha256": "59692ec57b6d60eaf289facdc17de19e5252f3861e8fa1a91eee32edc63661ba"
+    },
+    {
+      "path": "scripts/repair_files.py",
+      "sha256": "c6d4be917d387e53c1b7460c5680a44b32a08f992d181094970dc014686902fb"
+    },
+    {
+      "path": "scripts/requirements.txt",
+      "sha256": "db3d9e95162b720a54cdf50ed70de5a938ce4e04ac03012ca315da14f9431a12"
+    },
+    {
+      "path": "scripts/rollback.py",
+      "sha256": "0b9931efc2c62c8f3f2b6f92ee2087258c9aff5f1a106a65feb973b2fbc4ad68"
+    },
+    {
+      "path": "scripts/runtime/launcher.mjs",
+      "sha256": "55659911b030324cf7ee408d52d1fdc3e4aacd1481bf51ee13485c5aecd13387"
+    },
+    {
+      "path": "scripts/runtime/parent_context.py",
+      "sha256": "4bbcaa83d236d70755c31823a4bbe4d6d613554df0b7498126de426fc7f5b3d8"
+    },
+    {
+      "path": "scripts/runtime/windows-cwd-bridge.mjs",
+      "sha256": "545b94a173fd79dab57dc9eb7f9b989c1073c4ec4c4820d27559feb6e3168ea1"
+    },
+    {
+      "path": "scripts/test_repair.py",
+      "sha256": "334fa315fbb453e16e5083fc90a2cdca4bb91ad2c14405157188bb173d3bd7a5"
+    },
+    {
+      "path": "scripts/timing.py",
+      "sha256": "b0b9333d34fce28e9f8a8471d15f2b2b27b14d3314bd7427d9d8e2a5c6db60d3"
+    },
+    {
+      "path": "scripts/verify_startup.py",
+      "sha256": "a899cad6fa4e8e0aea42a848a2dedfda575910ddf534110721c7788654212037"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "a42e741e4d44bdc8a84421bd20ac4c03fff5d53b89fce41c5d77055de734bfb7"
+    }
+  ]
+}

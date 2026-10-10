@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-10",
+  "skill_frontmatter": "passed with Python UTF-8 mode",
+  "offline_behavior_tests": {
+    "passed": 6,
+    "scope": [
+      "install and restore",
+      "idempotent restore",
+      "source drift refusal",
+      "all-file restore preflight",
+      "layer selection",
+      "backup tampering refusal",
+      "verified parent filtering and endpoint rejection"
+    ]
+  },
+  "live_read_only_diagnosis": "recognized historical repair",
+  "live_manual_patch_overwrite_guard": "refused as expected",
+  "synthetic_startup": {
+    "passed": true,
+    "elapsed_seconds": 0.609,
+    "note": "existing installed manual runtime, not newly parameterized installation; no browser test"
+  },
+  "timing_generation": "known original anchors and generated JS syntax passed; not installed",
+  "agentpark_loader": "discovered and loaded",
+  "agentpark_api": {
+    "status": 200,
+    "entry": "dot-windows-cua-repair",
+    "endpoint": "/api/skills"
+  },
+  "runtime_deployed_during_packaging": false,
+  "dot_final_browser_acceptance": "user-reported success for fourth repair layer; all four deployed layers confirmed",
+  "acceptance_evidence": {
+    "date": "2026-10-10",
+    "source": "direct user message relaying Dot confirmation",
+    "statement": "第四层dot那边已经确认修复成功了",
+    "detailed_step_log_provided": false
+  },
+  "reuse_workflow": "One combined repair and local verification; no Dot confirmation required."
+}
